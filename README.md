@@ -1,4 +1,6 @@
-## The purpose of this repository is to allow developers to show acceptable videos <br>and never blocked videos which are super ugly staticy looking. 
+## The purpose of this repository:
+1) allow developers to show embed acceptable videos on their website
+2) and never show blocked videos which display super ugly static. 
 
 ### Here are some of the links that we will be testing:
 <pre>working video:    https://www.youtube.com/embed/durCuF6jb8k?rel=0&autoplay=1
