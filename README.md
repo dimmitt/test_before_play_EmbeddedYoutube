@@ -83,6 +83,27 @@ checkVideo p_IwENcMPOA
 
 ```
 
-## Coming Soon
-
 bonus ... PLAYLISTS!: https://www.youtube.com/embed/?list=PLOcTEsKp5qpV7pbtiGeLAjlmD086bqymr&index=3&rel=0&autoplay=1
+
+```bash
+## paremeters to play the third video in a playlist
+?list=PLOcTEsKp5qpV7pbtiGeLAjlmD086bqymr&index=3&rel=0&autoplay=1
+```
+
+Links related to playlists:
+```bash
+## returns a json object with all of the items in the list.
+curl 'https://www.youtube.com/list_ajax?style=json&action_get_list=1&list=LLSCWFSK6rEm7Pg0yxD61pOA'
+
+## uses the video_id grabbed from the current video index looking up the list_ajax result.
+curl 'https://www.youtube.com/get_video_info?html5=1&video_id=ILVqgOlntLM'
+```
+```bash
+## for video ?list=PLOcTEsKp5qpV7pbtiGeLAjlmD086bqymr&index=3&rel=0&autoplay=1
+
+result=$(curl 'https://www.youtube.com/list_ajax?style=json&action_get_list=1&list=PLOcTEsKp5qpV7pbtiGeLAjlmD086bqymr')
+videoID=result.video[3].encrypted_id
+checkVideo $videoId
+```
+
+Woot, done. 😎
