@@ -54,9 +54,10 @@ Update: referrer was not needed for this project.
 <br/>~13) Looking deeper on the network tab of dev tools, the request uses a referrer...~
 <br/>~14) lets write a post to the get info url with a header using referer of the video I want the info regarding.<br>~
 <!--
-<pre>curl -H 'referer: https://www.youtube.com/embed/O0EXiT4nYQ0'
-  'https://www.youtube.com/get_video_info?html5=1&video_id=O0EXiT4nYQ0&cpn=y96mZdNTBvQyTmG5&eurl&el=embedded&hl=en_US&sts=17555&lact=7&c=WEB_EMBEDDED_PLAYER&cver=20180125&cplayer=UNIPLAYER&cbr=Chrome&cbrver=63.0.3239.132&cos=Macintosh&cosver=10_12_6&width=409&height=800&authuser=0&ei=JApuWsu_OoiGgwPHw6boBQ&iframe=1'</pre>
---/>
+curl -H 'referer: https://www.youtube.com/embed/O0EXiT4nYQ0'
+  'https://www.youtube.com/get_video_info?html5=1&video_id=O0EXiT4nYQ0&cpn=y96mZdNTBvQyTmG5&eurl&el=embedded&hl=en_US&sts=17555&lact=7&c=WEB_EMBEDDED_PLAYER&cver=20180125&cplayer=UNIPLAYER&cbr=Chrome&cbrver=63.0.3239.132&cos=Macintosh&cosver=10_12_6&width=409&height=800&authuser=0&ei=JApuWsu_OoiGgwPHw6boBQ&iframe=1'
+
+-->
 
 # test_ifEmbedded_youtube_video_works_before_putting_one
 
