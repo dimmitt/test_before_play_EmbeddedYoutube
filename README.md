@@ -109,3 +109,8 @@ checkVideo $videoId
 ```
 
 Woot, done. 😎
+
+## Additional documentation, links to the youtube iframe api: 
+<br/>the documentation did not solve the problem that this repo tackles.
+<br/>https://developers.google.com/youtube/iframe_api_reference
+<br/>https://developers.google.com/youtube/player_parameters
